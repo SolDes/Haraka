@@ -6,7 +6,25 @@ Haraka - a Node.js Mail Server
 ![Tests - Windows](https://github.com/haraka/Haraka/workflows/Haraka%20Tests%20-%20Windows/badge.svg)
 [![Coverage Status][cov-img]][cov-url]
 
+## SOLDES specific instructions
 
+### Get repo sub modules
+
+`git submodule init`
+
+`git submodule update`
+
+### Build Docker image
+
+`docker build -t "IMAGENAME" .`
+
+### Run Docker container
+
+`docker run --publish 8000:8080 --detach --name NAME IMAGENAME`
+
+***
+
+### Forker repo info
 
 Haraka is a highly scalable [node.js][1] email server with a modular
 plugin architecture. Haraka can serve thousands of concurrent connections
