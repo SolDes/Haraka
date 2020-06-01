@@ -69,3 +69,6 @@ data.headers
 queue/smtp_forward
 
 #watch
+
+# haraka_plugin_kafka
+haraka_plugin_kafka

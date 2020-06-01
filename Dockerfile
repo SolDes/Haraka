@@ -40,6 +40,9 @@ ADD ./config/host_list /usr/local/haraka/config/host_list
 ADD ./config/plugins /usr/local/haraka/config/plugins
 RUN cd /usr/local/haraka && npm install
 
+# Copy haraka_plugin_kafka config
+COPY /plugins/haraka_plugin_kafka/config/kafka.ini /config/kafka.ini
+
 # Create haraka runit service
 RUN mkdir /etc/service/haraka
 ADD haraka.sh /etc/service/haraka/run

@@ -1,0 +1,3 @@
+[submodule "plugins/haraka_plugin_kafka"]
+	path = plugins/haraka_plugin_kafka
+	url = git@github.com:SolDes/haraka_plugin_kafka.git
